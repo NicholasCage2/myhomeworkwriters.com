@@ -1,0 +1,490 @@
+@-webkit-keyframes flat-spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes flat-spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.flat-spinner {
+    margin: 90px auto;
+    position: relative;
+    border-top: 5px solid rgba(0, 147, 221, .2);
+    border-right: 5px solid rgba(0, 147, 221, .2);
+    border-bottom: 5px solid rgba(0, 147, 221, .2);
+    border-left: 5px solid #0093dd;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: flat-spinner 1s infinite linear;
+    animation: flat-spinner 1s infinite linear
+}
+
+.flat-spinner,
+.flat-spinner:after {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px
+}
+
+
+.price_table_default {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+    padding: 0;
+    margin: 10px auto 25px;
+  }
+  
+  .price_table_default tr:first-child {
+    display: none;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .price_table_default {
+      font-size: 14px;
+    }
+  }
+  
+  .deadline_header {
+    color: #645d4f;
+    background-color: #f0ede9;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: inset -10px 0 0 -1px rgba(255, 255, 255, .7);
+  }
+  
+  @media screen and (max-width: 500px) {
+    .deadline_header {
+      display: none;
+    }
+  }
+  
+  .courselevel_header {
+    color: #4e6064;
+    font-size: 14px;
+    background-color: #dce6e8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-weight: 400;
+    padding: 3px 0;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .courselevel_header {
+      display: none;
+    }
+  }
+  
+  .deadline_cell_header th:first-child {
+    box-shadow: none;
+  }
+  
+  .pricing-page-new-content .landing-sidebar {
+    margin-top: 0;
+  }
+  
+  .landing-content.pricing-page-new-content {
+    padding: 0 15px;
+  }
+  
+  .price_table_default {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+    padding: 0;
+    margin: 10px auto 25px;
+  }
+  
+  .price_table_default td,
+  .price_table_default th + th {
+    border-left: 1px solid #ddd;
+  }
+  
+  .price_table_default th,
+  .price_table_default td,
+  .price_table_default th + th {
+    background-color: #fff;
+  }
+  
+  .price_table_default .deadline_cell_header th:first-child {
+    background-color: transparent;
+  }
+  
+  .price_table_default td.hover,
+  .price_table_default td.hover + td,
+  .price_table_default th.th-hover,
+  .price_table_default th.th-hover + th {
+    border-left-color: transparent;
+  }
+  
+  .deadline_cell_header th + th {
+    border-top: 1px solid #ddd;
+    font-size: 17px;
+    line-height: 120%;
+    padding: 15px .3vw;
+  }
+  
+  .deadline_cell_header th + th.th-hover,
+  .deadline_cell_header th.th-hover {
+    border-top-color: transparent;
+  }
+  
+  .deadline_cell_header th {
+    position: relative;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  
+  .deadline_cell_header th:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+    right: 0;
+    height: 6px;
+    background-color: transparent;
+    border-radius: 5px 5px 0 0;
+    -webkit-transition: background-color .3s ease, top 0s ease .3s;
+    transition: background-color .3s ease, top 0s ease .3s;
+  }
+  
+  .deadline_cell_header th.th-hover:before {
+    top: -6px;
+    -webkit-transition: background-color .25s ease .05s, top .3s ease .05s;
+    transition: background-color .25s ease .05s, top .3s ease .05s;
+  }
+  
+  .deadline_cell_header th strong {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .deadline_cell_header th span {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  
+  .deadline_cell_header th:nth-of-type(2) {
+    border-radius: 5px 0 0;
+  }
+  
+  .deadline_cell_header th.th-hover,
+  .deadline_cell_header th.th-hover:nth-of-type(2) {
+    border-radius: 0;
+  }
+  
+  .deadline_cell_header th:nth-of-type(6) {
+    border-right: 1px solid #ddd;
+    border-radius: 0 5px 0 0;
+  }
+  
+  .deadline_cell_header th.th-hover:nth-of-type(6) {
+    border-right-color: transparent;
+    border-radius: 0;
+  }
+  
+  .deadline_cell_header th.th-hover:nth-of-type(6):before {
+    right: -1px;
+  }
+  
+  @media (min-width: 700px) and (max-width: 992px), (max-width: 600px) {
+    .deadline_cell_header th + th {
+      font-size: 15px;
+    }
+  }
+  
+  .price_table_default tr:nth-of-type(n+2) .courselevel_name {
+    font-size: 15px;
+    font-weight: 400;
+    color: #888;
+    white-space: nowrap;
+    padding: 10px 1vw;
+    text-align: left;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+  }
+  
+  .price_table_default tr:nth-of-type(n+2) .courselevel_name.th-hover {
+    color: #000;
+  }
+  
+  .price_table_default tr:nth-of-type(odd) .courselevel_name {
+    background-color: rgba(0, 0, 0, .03);
+  }
+  
+  @media (max-width: 479px) {
+    .price_table_default {
+      margin: 10px auto;
+    }
+  
+    .deadline_cell_header {
+      display: none;
+    }
+  
+    .price_table_default tr:nth-of-type(n+2) .courselevel_name {
+      display: block;
+      position: relative;
+      background-color: rgba(0, 0, 0, .03);
+      text-align: right;
+      padding: 10px 15px;
+    }
+  
+    .price_table_default tr:nth-of-type(n+2) .courselevel_name:before {
+      content: "Deadline";
+      position: absolute;
+      left: 15px;
+      top: 0;
+      line-height: 44px;
+    }
+  }
+  
+  .price_table_default td {
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 26px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  
+  .price_table_default td.hover.hover-cell {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .price_table_default td:nth-of-type(5) {
+    border-right: 1px solid #ddd;
+  }
+  
+  .price_table_default td.hover:nth-of-type(5) {
+    border-right-color: transparent;
+  }
+  
+  .price_table_default .price_row_0 td,
+  .price_table_default .price_row_2 td,
+  .price_table_default .price_row_4 td,
+  .price_table_default .price_row_6 td,
+  .price_table_default .price_row_8 td {
+    background-color: rgba(0, 0, 0, .05);
+  }
+  
+  .price_table_default .price_row_0 td.hover,
+  .price_table_default .price_row_2 td.hover,
+  .price_table_default .price_row_4 td.hover,
+  .price_table_default .price_row_6 td.hover,
+  .price_table_default .price_row_8 td.hover {
+    background-color: #308aad;
+  }
+  
+  .price_table_default .price_row_8 td,
+  .price_table_default .price_row_8 th {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .price_table_default .price_row_8 td:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    right: 0;
+    height: 6px;
+    background-color: transparent;
+    border-radius: 0 0 5px 5px;
+    -webkit-transition: background-color .3s ease, bottom 0s ease .3s;
+    transition: background-color .3s ease, bottom 0s ease .3s;
+  }
+  
+  .price_table_default .price_row_8 td.hover:before {
+    bottom: -6px;
+    -webkit-transition: background-color .25s ease .05s, bottom .3s ease .05s;
+    transition: background-color .25s ease .05s, bottom .3s ease .05s;
+  }
+  
+  .price_table_default .price_row_8 td.hover {
+    border-bottom-color: transparent;
+    border-radius: 0;
+  }
+  
+  .price_table_default .price_row_8 th {
+    border-radius: 0 0 0 5px;
+  }
+  
+  .price_table_default .price_row_8 td:nth-of-type(5) {
+    border-radius: 0 0 5px;
+  }
+  
+  .price_table_default .price_row_8 td:nth-of-type(5):before {
+    right: -1px;
+  }
+  
+  .price_table_default .price_row_8 td.hover:nth-of-type(1),
+  .price_table_default .price_row_8 td.hover:nth-of-type(5) {
+    border-radius: 0;
+  }
+  
+  @media (max-width: 479px) {
+    .price_table_default td {
+      display: block;
+      position: relative;
+      border: 0;
+      border-top: 1px solid #ddd;
+      padding: 10px 15px;
+      text-align: right;
+    }
+  
+    .price_table_default td:before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 0;
+      font-size: 13px;
+      line-height: 44px;
+    }
+  
+    .price_table_default td:nth-of-type(1):before {
+      content: "High School";
+    }
+  
+    .price_table_default td:nth-of-type(2):before {
+      content: "Undergrad. (yrs 1-2)";
+    }
+  
+    .price_table_default td:nth-of-type(3):before {
+      content: "Undergrad. (yrs 3-4)";
+    }
+  
+    .price_table_default td:nth-of-type(4):before {
+      content: "Master's";
+    }
+  
+    .price_table_default td:nth-of-type(5):before {
+      content: "Doctoral";
+    }
+  
+    .price_table_default .price_row_8 td:nth-of-type(1),
+    .price_table_default .price_row_8 td:nth-of-type(5) {
+      border-radius: 0;
+    }
+  
+    .price_table_default .price_row_8 td {
+      border-bottom: 0;
+    }
+  
+    .price_table_default .price_row_8 td:before,
+    .price_table_default .price_row_8 td:nth-of-type(5):before {
+      right: auto;
+      left: 15px;
+    }
+  
+    .price_table_default .price_row_8 td:nth-of-type(5),
+    .price_table_default td:nth-of-type(5) {
+      border-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+  
+  .deadline_cell_header th.th-hover,
+  .deadline_cell_header th.th-hover:before,
+  .price_table_default .price_row_8 td.hover:before,
+  .price_table_default td.hover {
+    background-color: #3391b6;
+    color: #fff;
+  }
+  
+  .deadline_cell_header th.th-hover:nth-of-type(2),
+  .deadline_cell_header th.th-hover:nth-of-type(2):before,
+  .price_table_default .price_row_8 td.hover:nth-of-type(1):before,
+  .price_table_default td.hover:nth-of-type(1) {
+    background-color: #fea930;
+  }
+  
+  .price_table_default .price_row_0 td.hover:nth-of-type(1),
+  .price_table_default .price_row_2 td.hover:nth-of-type(1),
+  .price_table_default .price_row_4 td.hover:nth-of-type(1),
+  .price_table_default .price_row_6 td.hover:nth-of-type(1) {
+    background-color: #f1a02e;
+  }
+  
+  .deadline_cell_header th.th-hover:nth-of-type(3),
+  .deadline_cell_header th.th-hover:nth-of-type(3):before,
+  .price_table_default .price_row_8 td.hover:nth-of-type(2):before,
+  .price_table_default td.hover:nth-of-type(2) {
+    background-color: #8bc34a;
+  }
+  
+  .price_table_default .price_row_0 td.hover:nth-of-type(2),
+  .price_table_default .price_row_2 td.hover:nth-of-type(2),
+  .price_table_default .price_row_4 td.hover:nth-of-type(2),
+  .price_table_default .price_row_6 td.hover:nth-of-type(2) {
+    background-color: #84b946;
+  }
+  
+  .deadline_cell_header th.th-hover:nth-of-type(5),
+  .deadline_cell_header th.th-hover:nth-of-type(5):before,
+  .price_table_default .price_row_8 td.hover:nth-of-type(4):before,
+  .price_table_default td.hover:nth-of-type(4) {
+    background-color: #ce93d8;
+  }
+  
+  .price_table_default .price_row_0 td.hover:nth-of-type(4),
+  .price_table_default .price_row_2 td.hover:nth-of-type(4),
+  .price_table_default .price_row_4 td.hover:nth-of-type(4),
+  .price_table_default .price_row_6 td.hover:nth-of-type(4) {
+    background-color: #c38ccd;
+  }
+  
+  .deadline_cell_header th.th-hover:nth-of-type(6),
+  .deadline_cell_header th.th-hover:nth-of-type(6):before,
+  .price_table_default .price_row_8 td.hover:nth-of-type(5):before,
+  .price_table_default td.hover:nth-of-type(5) {
+    background-color: #f06292;
+  }
+  
+  .price_table_default .price_row_0 td.hover:nth-of-type(5),
+  .price_table_default .price_row_2 td.hover:nth-of-type(5),
+  .price_table_default .price_row_4 td.hover:nth-of-type(5),
+  .price_table_default .price_row_6 td.hover:nth-of-type(5) {
+    background-color: #e45d8b;
+  }
+  
+  .price_table_default .price_row th.courselevel_name {
+    border-left: 1px solid #ddd;
+    font-weight: 600;
+  }
+  
+  .price_table_default .price_row_0 th {
+    border-top: 1px solid #ddd;
+    border-radius: 5px 0 0;
+  }
+  
+  @media (max-width: 479px) {
+    .price_table_default .price_row th.courselevel_name {
+      border: 0;
+      border-radius: 5px 5px 0 0;
+    }
+  }
+  
+  .courselevel_name .hint:after {
+    width: 105px;
+    white-space: pre-wrap;
+  }
+  
+  .ico-level:before {
+    background-position: 0 -180px;
+    height: 20px;
+    top: 5px;
+  }
+  
